@@ -45,7 +45,7 @@ main {
   max-width: 96rem;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  
+
   border: 1px solid hsl(0, 0%, 95%);
   border-radius: 5px;
 }
@@ -99,6 +99,8 @@ main {
 /* Styling classes */
 .car-sedan {
   background-color: var(--p-orange);
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
 }
 
 .car-suv {
@@ -107,6 +109,8 @@ main {
 
 .car-luxury {
   background-color: var(--p-dark-cyan);
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
 }
 
 .color-orange {
