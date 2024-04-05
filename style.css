@@ -1,0 +1,139 @@
+:root {
+  /* Primary Colors */
+  --p-orange: hsl(31, 77%, 52%);
+  --p-cyan: hsl(184, 100%, 22%);
+  --p-dark-cyan: hsl(179, 100%, 13%);
+
+  /* Netural colors */
+
+  --para-white: hsla(0, 0%, 100%, 0.75);
+  --other-white: hsl(0, 0%, 95%);
+
+  /* Font Family */
+  --secondary-font: Lexend Deca;
+  --primary-font: Big Shoulders Display;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.5rem;
+  background-color: var(--other-white);
+
+  min-height: 100vh;
+  width: auto;
+  margin: auto;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+}
+
+.grid {
+  max-width: 96rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  
+  border: 1px solid hsl(0, 0%, 95%);
+  border-radius: 5px;
+}
+
+.section {
+  padding: 4.8rem;
+}
+
+.car-img {
+  display: block;
+}
+
+.car-name {
+  font-family: var(--primary-font);
+  text-transform: uppercase;
+  color: var(--other-white);
+  margin-top: 3.2rem;
+  margin-bottom: 3.2rem;
+  font-weight: 700;
+}
+
+.car-text {
+  color: var(--para-white);
+  font-family: var(--secondary-font);
+  line-height: 1.8;
+  margin-bottom: 6.4rem;
+}
+
+.car-info:link,
+.car-info:visited {
+  display: inline-block;
+  text-decoration: none;
+  font-family: var(--secondary-font);
+  font-size: 1.5rem;
+  font-weight: 400;
+
+  padding: 1.2rem 2.4rem;
+  text-align: center;
+  border-radius: 150px;
+  background-color: var(--other-white);
+
+  transition: all 0.5s;
+}
+
+.car-info:hover,
+.car-info:active {
+  cursor: pointer;
+  box-shadow: inset 0 0 0 2px var(--other-white);
+}
+
+/* Styling classes */
+.car-sedan {
+  background-color: var(--p-orange);
+}
+
+.car-suv {
+  background-color: var(--p-cyan);
+}
+
+.car-luxury {
+  background-color: var(--p-dark-cyan);
+}
+
+.color-orange {
+  color: var(--p-orange);
+  background-color: var(--p-orange);
+}
+
+.color-orange:hover {
+  background-color: var(--p-orange);
+  color: var(--other-white);
+}
+
+.color-cyan {
+  color: var(--p-cyan);
+  background-color: var(--p-cyan);
+}
+
+.color-cyan:hover {
+  background-color: var(--p-cyan);
+  color: var(--other-white);
+}
+
+.color-dark-cyan {
+  color: var(--p-dark-cyan);
+}
+
+.color-dark-cyan:hover {
+  background-color: var(--p-dark-cyan);
+  color: var(--other-white);
+}

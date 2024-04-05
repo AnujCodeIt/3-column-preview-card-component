@@ -1,0 +1,7 @@
+@media (max-width: 63em) {
+  .grid {
+    width: 30rem;
+    grid-template-columns: 1fr;
+    margin-top: 10rem;
+  }
+}
